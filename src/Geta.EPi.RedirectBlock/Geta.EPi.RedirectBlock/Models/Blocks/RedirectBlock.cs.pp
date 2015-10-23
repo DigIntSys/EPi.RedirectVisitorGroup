@@ -4,7 +4,7 @@ using EPiServer.Core;
 using EPiServer.DataAbstraction;
 using EPiServer.DataAnnotations;
 
-namespace Geta.EPi.RedirectBlock.Models.Blocks
+namespace $rootnamespace$.Models.Blocks
 {
     [ContentType(DisplayName = "RedirectBlock", GUID = "4c2d94fc-4b49-4ca8-bae8-7bec195b13f9", Description = "")]
     public class RedirectBlock : BlockData

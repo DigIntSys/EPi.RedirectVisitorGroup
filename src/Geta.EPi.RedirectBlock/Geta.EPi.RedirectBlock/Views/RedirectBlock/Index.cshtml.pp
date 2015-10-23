@@ -2,7 +2,7 @@
 @using EPiServer.Core
 @using EPiServer.Editor
 @using EPiServer.Web.Routing
-@model Geta.EPi.RedirectBlock.Models.Blocks.RedirectBlock
+@model $rootnamespace$.Models.Blocks.RedirectBlock
 @{
     Layout = null;
 }

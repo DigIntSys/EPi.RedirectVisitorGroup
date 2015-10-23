@@ -2,9 +2,9 @@
 using EPiServer;
 using EPiServer.Core;
 using EPiServer.Web.Mvc;
-using Geta.EPi.RedirectBlock.Models.Blocks;
+using $rootnamespace$.Models.Blocks;
 
-namespace Geta.EPi.RedirectBlock.Controllers
+namespace $rootnamespace$.Controllers
 {
     public class RedirectBlockController : BlockController<Models.Blocks.RedirectBlock>
     {

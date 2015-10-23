@@ -1,13 +1,15 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
+<?xml version="1.0"?>
+<package >
   <metadata>
     <id>$id$</id>
     <version>$version$</version>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
+    <title>$title$</title>
+    <authors>Geta AS</authors>
+    <owners>Geta AS</owners>
     <projectUrl>https://github.com/Geta/RedirectBlock</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
+    <description>Use for inserting blocks for redirecting to various pages besed on Visitor Types</description>
+    <copyright>Copyright 2015</copyright>
     <tags>Geta Redirect Block</tags>
   </metadata>
 </package>
