@@ -2,7 +2,7 @@
 using EPiServer.Framework;
 using EPiServer.Framework.Initialization;
 
-namespace Geta.EPi.RedirectBlock.Business.Initialization
+namespace Geta.EPi.RedirectBlock.Infrastructure.Initialization
 {
     [ModuleDependency(typeof(EPiServer.Web.InitializationModule))]
     public class FilterConfig: IInitializableModule

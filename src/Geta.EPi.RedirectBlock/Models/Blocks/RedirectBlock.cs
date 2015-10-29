@@ -7,17 +7,9 @@ using EPiServer.DataAnnotations;
 
 namespace Geta.EPi.RedirectBlock.Models.Blocks
 {
+    [ContentType(DisplayName = "RedirectBlock", GUID = "f6b137df-37b7-40b1-b28e-6c999cfa3aff", Description = "")]
     public class RedirectBlock : BlockData
     {
-
-        [CultureSpecific]
-        [Display(
-            Name = "Name",
-            Description = "Name field's description",
-            GroupName = SystemTabNames.Content,
-            Order = 10)]
-        public virtual String Name { get; set; }
-
 
         [CultureSpecific]
         [Display(
@@ -25,7 +17,7 @@ namespace Geta.EPi.RedirectBlock.Models.Blocks
             Description = "Redirect to this page",
             GroupName = SystemTabNames.Content,
             Order = 20)]
-        public virtual Url contentReference { get; set; }
+        public virtual Url url { get; set; }
 
 
     }

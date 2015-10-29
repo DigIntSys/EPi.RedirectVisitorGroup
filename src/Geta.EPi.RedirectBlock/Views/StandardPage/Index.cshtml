@@ -1,0 +1,21 @@
+﻿@using EPiServer.Web.Mvc.Html
+@model Geta.EPi.RedirectBlock.Models.Pages.StandardPage
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+<div>
+    @Html.PropertyFor(x=>x.MainBody)
+    <br/>
+    @Html.PropertyFor(x => x.contentAreaIsHere)
+</div>
+</body>
+</html>
