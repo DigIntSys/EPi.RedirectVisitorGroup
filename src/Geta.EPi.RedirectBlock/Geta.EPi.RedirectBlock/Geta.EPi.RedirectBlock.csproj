@@ -228,9 +228,10 @@
   <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
   <ItemGroup>
-    <None Include="Controllers\RedirectBlockController.cs.pp" />
     <Content Include="EPiServerLog.config" />
-    <None Include="Models\Blocks\RedirectBlock.cs.pp" />
+    <Compile Include="Business\Initialization\FilterConfig.cs" />
+    <Compile Include="Business\RedirectAttribute.cs" />
+    <Compile Include="Models\Blocks\RedirectBlock.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -246,11 +247,12 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Controllers\" />
     <Folder Include="Views\Shared\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Data\GeoLiteCity.dat" />
-    <None Include="Views\RedirectBlock\Index.cshtml.pp" />
+    <None Include="Views\RedirectBlock\Index.cshtml" />
     <Content Include="Geta.EPi.RedirectBlock.nuspec" />
   </ItemGroup>
   <ProjectExtensions>
