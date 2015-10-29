@@ -222,3 +222,7 @@ _Pvt_Extensions
 **/App_Data*
 
 **/modules*
+EPiServerLog.config
+Global.asax
+Global.asax.cs
+
