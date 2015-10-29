@@ -11,9 +11,7 @@
 <div>
     @if (PageEditing.PageIsInEditMode)
     {
-        <span>Redirect to:</span> @Html.PropertyFor(x => x.url)
+        <span>Redirect to:@Html.PropertyFor(x => x.url)</span>
     }
-    
-
 </div>
 

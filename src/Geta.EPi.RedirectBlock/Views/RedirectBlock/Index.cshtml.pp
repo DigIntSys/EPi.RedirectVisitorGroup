@@ -9,6 +9,9 @@
 }
 
 <div>
-    @Html.PropertyFor(x => x.Name)<br/>
+    @if (PageEditing.PageIsInEditMode)
+    {
+        <span>Redirect to:@Html.PropertyFor(x => x.url)</span>
+    }
 </div>
 
