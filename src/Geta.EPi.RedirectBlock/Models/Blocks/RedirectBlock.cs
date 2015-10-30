@@ -13,11 +13,11 @@ namespace Geta.EPi.RedirectBlock.Models.Blocks
 
         [CultureSpecific]
         [Display(
-            Name = "Page to redirect",
+            Name = "Page to redirect to",
             Description = "Redirect to this page",
             GroupName = SystemTabNames.Content,
-            Order = 20)]
-        public virtual Url url { get; set; }
+            Order = 10)]
+        public virtual Url RedirectUrl { get; set; }
 
 
     }

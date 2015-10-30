@@ -1,0 +1,20 @@
+﻿@using EPiServer.Web.Mvc.Html
+@model Geta.EPi.RedirectBlock.Models.Pages.ArealessPage
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+This is arealess page for testing
+<div>
+    @Html.PropertyFor(x=>x.MainBody)
+</div>
+</body>
+</html>

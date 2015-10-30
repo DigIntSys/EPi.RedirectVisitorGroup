@@ -20,10 +20,10 @@ namespace Geta.EPi.RedirectBlock.Infrastructure
             if (requested.Page == null)
                 return;
 
-            PageData pageData = requested.Page;
-            
             ContentArea contentArea;
-            string contentAreaName = pageData.Property.FirstOrDefault(x => x is PropertyContentArea)?.Name;
+            string contentAreaName = requested.Page.Property.FirstOrDefault(x => x is PropertyContentArea)?.Name;
+            if (contentAreaName==null)
+                return;
             
             if (requested.Page[contentAreaName] ==null)
                 return;
@@ -35,10 +35,9 @@ namespace Geta.EPi.RedirectBlock.Infrastructure
             var redirectBlock = contentArea.FilteredItems.Select(x => x.GetContent()).FirstOrDefault(x => x is Models.Blocks.RedirectBlock);
             if (redirectBlock==null)
                 return;
-            Url contentReference=((Models.Blocks.RedirectBlock)redirectBlock).url;
+            Url contentReference=((Models.Blocks.RedirectBlock)redirectBlock).RedirectUrl;
             filterContext.Result = new RedirectResult(contentReference.OriginalString);
-                
-            
+
         }
 
 
