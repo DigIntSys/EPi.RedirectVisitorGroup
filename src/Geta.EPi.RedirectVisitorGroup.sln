@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geta.EPi.RedirectBlock", "Geta.EPi.RedirectBlock\Geta.EPi.RedirectBlock.csproj", "{17325CAA-1549-47B0-83C3-418B93A8F024}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Geta.EPi.RedirectVisitorGroup", "Geta.EPi.RedirectVisitorGroup\Geta.EPi.RedirectVisitorGroup.csproj", "{17325CAA-1549-47B0-83C3-418B93A8F024}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

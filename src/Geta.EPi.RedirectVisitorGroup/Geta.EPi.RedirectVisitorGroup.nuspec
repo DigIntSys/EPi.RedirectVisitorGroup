@@ -6,10 +6,13 @@
     <title>$title$</title>
     <authors>Geta</authors>
     <owners>Geta</owners>
-    <projectUrl>https://github.com/Geta/RedirectBlock</projectUrl>
+    <projectUrl>https://github.com/Geta/EPi.RedirectVisitorGroup</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Use for inserting blocks for redirecting to various pages besed on Visitor Types</description>
+    <description>$description$</description>
     <copyright>Copyright 2015</copyright>
-    <tags>Geta Redirect Block</tags>
+    <tags>Geta Redirect Visitor Group</tags>
   </metadata>
+  <files>
+    <file src="readme.txt" target="" />
+  </files>
 </package>

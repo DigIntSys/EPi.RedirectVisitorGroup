@@ -1,9 +1,4 @@
-# Geta.EPi.RedirectVisitorGroup
-Allows editors to redirect to EPiServer pages and external URLs based on different visitor group criterias.
-
-```
-Install-Package Geta.EPi.RedirectVisitorGroup
-```
+﻿Geta.EPi.RedirectVisitorGroup
 
 Implement the interface IRedirectVisitorGroup in the content types that should be able to redirect based on visitor group criterias.
 
