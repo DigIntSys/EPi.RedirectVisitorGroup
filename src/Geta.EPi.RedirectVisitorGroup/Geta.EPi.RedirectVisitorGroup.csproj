@@ -187,6 +187,7 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <None Include="readme.txt" />
     <None Include="Geta.EPi.RedirectVisitorGroup.nuspec" />
     <Content Include="packages.config" />
   </ItemGroup>

@@ -29,13 +29,21 @@ namespace Geta.EPi.RedirectVisitorGroup
 
             // ReSharper disable once SuspiciousTypeConversion.Global
             var redirectPage = (page as IRedirectVisitorGroup).RedirectContentArea.FilteredItems.Select(x => x.GetContent()).FirstOrDefault();
-            if (redirectPage == null)
+            if (!(redirectPage is PageData))
             {
                 return;
             }
 
-            // TODO look for shortcut external page
-            filterContext.Result = new RedirectResult(UrlResolver.Service.GetUrl(redirectPage.ContentLink));
+            string url = UrlResolver.Service.GetUrl(redirectPage.ContentLink);
+
+            PageShortcutType propertyLinkType = ((PageData)redirectPage).LinkType;
+
+            if (propertyLinkType == PageShortcutType.External)
+            {
+                url = ((PageData) redirectPage).LinkURL;
+            }
+
+            filterContext.Result = new RedirectResult(url);
         }
     }
 }
