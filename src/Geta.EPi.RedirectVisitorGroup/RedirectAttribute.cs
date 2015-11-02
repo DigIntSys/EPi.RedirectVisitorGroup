@@ -28,7 +28,7 @@ namespace Geta.EPi.RedirectVisitorGroup
             }
 
             // ReSharper disable once SuspiciousTypeConversion.Global
-            var redirectPage = (page as IRedirectVisitorGroup).RedirectContentArea.FilteredItems.Select(x => x.GetContent()).FirstOrDefault();
+            var redirectPage = (page as IRedirectVisitorGroup).RedirectContentArea?.FilteredItems.Select(x => x.GetContent()).FirstOrDefault();
             if (!(redirectPage is PageData))
             {
                 return;
