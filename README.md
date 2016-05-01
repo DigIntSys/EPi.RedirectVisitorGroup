@@ -1,4 +1,7 @@
 # Geta.EPi.RedirectVisitorGroup
+
+![](http://tc.geta.no/app/rest/builds/buildType:(id:TeamFrederik_EPiRedirectVisitorGroup_EPiRedirectVisitorGroupCreateAndPublishNuGe)/statusIcon)
+
 Allows editors to redirect to EPiServer pages and external URLs based on different visitor group criterias.
 
 ```
