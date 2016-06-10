@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("Geta.EPi.RedirectBlock")]
+[assembly: AssemblyTitle("Geta.EPi.RedirectVisitorGroup")]
 [assembly: AssemblyDescription("Module for redirecting users based on EPiServer visitor group criterias")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Geta")]
-[assembly: AssemblyProduct("Geta.EPi.RedirectBlock")]
-[assembly: AssemblyCopyright("Copyright © Geta 2015")]
+[assembly: AssemblyProduct("Geta.EPi.RedirectVisitorGroup")]
+[assembly: AssemblyCopyright("Copyright © Geta 2016")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
