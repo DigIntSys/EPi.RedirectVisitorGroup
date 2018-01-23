@@ -11,6 +11,9 @@
     <description>$description$</description>
     <copyright>Copyright 2017</copyright>
     <tags>Geta Redirect Visitor Group</tags>
+    <dependencies>
+      <dependency id="EPiServer.CMS.Core" version="[10.10.4, 11)" />
+    </dependencies>
   </metadata>
   <files>
     <file src="readme.txt" target="" />
